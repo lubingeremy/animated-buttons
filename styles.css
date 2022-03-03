@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: min(7vw, 7vh);
+    font-family: 'Montserrat', sans-serif;
+}
+*:focus-visible{
+    border: 5px dotted red;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+main{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 7rem;
+    width: 7rem;
+    background-color: rgba(128, 128, 128, 0.281);
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 3.8rem;
+    height: 1.3rem;
+}
+/* BUTTON 1 */
+#btn1{
+    font-weight: 200;
+    transition: 0.4s;
+}
+#btn1:hover{
+    background-color: black;
+    color: white;
+}
+#btn1::before{
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 0.1rem;
+    background-color: black;
+    transform: translate(-0.17rem, -0.001rem);
+    transition: 0.3s;
+}
+#btn1:hover::before{
+    transform: translate(-0.17rem, 1.13rem);
+}
+/* BUTTON 2 */
+#btn2{
+    font-weight: 200;
+    transition: 0.4s;
+}
+#btn2:hover{
+    background-color: black;
+    color: white;
+}
+#btn2::after{
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 0.1rem;
+    background-color: black;
+    transform: translate(-3.623rem, 1.16rem);
+    transition: 0.3s;
+}
+#btn2:hover::after{
+    transform: translate(-3.623rem, -0.05rem);
+}
+/* BUTTON 3 */
+#btn3{
+    font-weight: 200;
+    transition: 0.4s;
+}
+#btn3:hover{
+    background-color: black;
+    color: white;
+}
+#btn3::before{
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 0.1rem;
+    background-color: black;
+    transform: translate(-0.17rem, -0.001rem);
+    transition: 0.3s;
+}
+#btn3:hover::before{
+    transform: translate(-0.17rem, 1.13rem);
+}
+#btn3::after{
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 0.1rem;
+    background-color: black;
+    transform: translate(-3.623rem, 1.16rem);
+    transition: 0.3s;
+}
+#btn3:hover::after{
+    transform: translate(-3.623rem, -0.05rem);
+}
