@@ -11,11 +11,11 @@
     border: 5px dotted red;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 1rem;
+    background-color: rgb(58, 53, 53);
+}
+h1{
+    color: white;
 }
 main{
     margin-top: 1rem;
@@ -23,9 +23,9 @@ main{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 7rem;
-    width: 7rem;
-    background-color: rgba(128, 128, 128, 0.281);
+    height: 9rem;
+    width: 100%;
+    background-color: white;
 }
 button{
     background-color: transparent;
