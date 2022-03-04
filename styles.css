@@ -109,3 +109,24 @@ button{
 #btn3:hover::after{
     transform: translate(-3.623rem, -0.05rem);
 }
+/* BUTTON 4 */
+#btn4{
+    font-weight: 200;
+    transition: 0.4s;
+}
+#btn4:hover{
+    background-color: black;
+    color: white;
+}
+#btn4::before{
+    content: "";
+    position: absolute;
+    width: 3.8rem;
+    height: 0.1rem;
+    background-color: black;
+    transform: translate(-0.255rem, -0.019rem);
+    transition: 0.3s;
+}
+#btn4:hover::before{
+    transform: translate(-0.255rem, 1.17rem);
+}
