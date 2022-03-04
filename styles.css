@@ -1,3 +1,7 @@
+:root{
+    --posit: translate(-0.255rem, -0.019rem);
+    /* --downPosition: translate(-0.255rem, 1.17rem); */
+}
 *{
     margin: 0;
     padding: 0;
@@ -115,8 +119,8 @@ button{
     transition: 0.4s;
 }
 #btn4:hover{
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
 }
 #btn4::before{
     content: "";
@@ -124,9 +128,9 @@ button{
     width: 3.8rem;
     height: 0.1rem;
     background-color: black;
-    transform: translate(-0.255rem, -0.019rem);
+    transform: var(--posit);
     transition: 0.3s;
 }
-#btn4:hover::before{
-    transform: translate(-0.255rem, 1.17rem);
-}
+/* #btn4:hover::before{
+    transform: var(--downPosition);
+} */
