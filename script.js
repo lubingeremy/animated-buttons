@@ -9,19 +9,19 @@
 
 
 const switchButton = document.getElementById("btn4")
-var stateButton = 0;
+var stateButton = false;
 
 switchButton.addEventListener('click', function(e){
     e.stopPropagation();
     e.preventDefault();
     console.log('sup');
 
-    if(stateButton === 0){
+    if(stateButton === false){
         switchButton.style.setProperty("--posit", "translate(-0.255rem, 1.17rem)");
-        stateButton = 1;
+        stateButton = true;
     } else{
         switchButton.style.setProperty("--posit", "translate(-0.255rem, -0.019rem)");
-        stateButton = 0;
+        stateButton = false;
     }
     
 })
